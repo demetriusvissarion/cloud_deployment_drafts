@@ -28,3 +28,11 @@ dig example.org NS
 cat - | openssl pkeyutl -encrypt -inkey kay-public.pem -pubin | base64
 
 openssl aes-256-cbc -pbkdf2 -d -in secret.txt.enc
+
+
+# Docker:
+docker run -d IMAGE_NAME
+docker run -d nginx
+docker run -d -p 8080:80 --name my_nginx_container nginx
+docker ps
+docker stop CONTAINER_ID_OR_NAME
