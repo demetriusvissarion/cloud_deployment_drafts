@@ -23,3 +23,8 @@ Host: www.example.org
 nslookup example.org
 dig example.org A
 dig example.org NS
+
+
+cat - | openssl pkeyutl -encrypt -inkey kay-public.pem -pubin | base64
+
+openssl aes-256-cbc -pbkdf2 -d -in secret.txt.enc
