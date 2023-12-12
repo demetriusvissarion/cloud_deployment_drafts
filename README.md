@@ -18,3 +18,8 @@ telnet www.example.org 80
 # paste both lines together:
 GET / HTTP/1.1
 Host: www.example.org
+
+
+nslookup example.org
+dig example.org A
+dig example.org NS
